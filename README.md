@@ -47,3 +47,25 @@ A full-stack blockchain-based application that integrates smart contracts with a
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 
+Install dependencies
+npm install
+
+3. Setup environment variables
+
+Create a .env file in root:
+PORT=5000
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+PRIVATE_KEY=your_wallet_private_key
+
+4. Run the server
+node index.js
+OR
+npx nodemon index.js
+
+5. Run Hardhat (for blockchain)
+npx hardhat compile
+npx hardhat run scripts/deploy.js
+
+👩‍💻 Author
+Megha
